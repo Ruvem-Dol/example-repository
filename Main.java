@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Print a message to the console
@@ -11,6 +13,25 @@ public class Main {
         String myString = "Java Basics";
 
         // Print variables
+        Scanner scanner = new Scanner(System.in);
+
+        // User interaction
+        System.out.print("Enter an integer: ");
+        myInt = scanner.nextInt();
+
+        System.out.print("Enter a double: ");
+        myDouble = scanner.nextDouble();
+
+        System.out.print("Enter a character: ");
+        myChar = scanner.next().charAt(0);
+
+        System.out.print("Enter a boolean: ");
+        myBool = scanner.nextBoolean();
+
+        System.out.print("Enter a string: ");
+        myString = scanner.next();
+
+        scanner.close();
         System.out.println("Integer: " + myInt);
         System.out.println("Double: " + myDouble);
         System.out.println("Character: " + myChar);
