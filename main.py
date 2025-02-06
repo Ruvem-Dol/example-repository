@@ -7,6 +7,8 @@ print("Hello, World!")
 x = 5          # Integer
 y = 3.14       # Float
 name = "Alice" # String
+name = input("Enter your name: ")  # User input for name
+age = int(input("Enter your age: "))  # User input for age
 is_active = True # Boolean
 
 # 3. Lists:
