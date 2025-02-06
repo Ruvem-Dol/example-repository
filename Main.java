@@ -71,4 +71,17 @@ public class Main {
     public static int addNumbers(int a, int b) {
         return a + b;
     }
+    // Use of a data structure: HashMap
+    public static void useHashMap() {
+        java.util.HashMap<String, Integer> map = new java.util.HashMap<>();
+        map.put("Apple", 1);
+        map.put("Banana", 2);
+        map.put("Cherry", 3);
+
+        System.out.println("HashMap elements:");
+        for (java.util.Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+
 }
